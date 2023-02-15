@@ -1,5 +1,5 @@
 *{
-    margin: px;
+    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
@@ -84,10 +84,6 @@ span{
     margin-top: -12%;
     font-size: small;
 }
-
-
-
-
 .mid-right img{
     max-width: 100%;
     max-height: 100%;
