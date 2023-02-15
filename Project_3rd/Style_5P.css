@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-image: url(img.png);
+    border-radius: 10%;
+    background-size: cover;
+    color: white;
+}
+nav{
+    display: flex;
+    background-color:  black;
+}
+.logo{
+    width:15%;
+    border-right: 2px solid white;
+    margin: 20px 60px  ;
+}
+.logo img{
+height: 80%;
+width: 50%;
+    
+}
+.menu{
+    display: flex;
+    width: 90%;
+}
+.menu ul{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 10px;
+    list-style: none;
+    gap: 40px;
+    width: 80%;
+}
+.menu ul li a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.end a{
+    font-weight: bold;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.end button{
+    margin: 20px 0px;
+    background-color: #ab11edfc;
+    height: 35px;
+    width: 130px;
+    border-radius: 6px
+}
+/* Nav Ended Body started */
+.main{
+    display: grid;
+    /* margin-left: 50%; */
+    justify-items: center;
+    margin-top: 10%;
+}
+.main h1{
+    font-size: 70px;
+    text-align: center;
+}
+.main button{
+    background-color: #bf0afb;
+    height: 40px;
+    width: 170px;
+    border: none;
+    border-radius: 6px;
+    line-height: 20px;
+}
+.main button a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+.main button {
+    margin-top: 40px;
+}
+.main p{
+   font-size: 25px;
+   /* font-weight: bold; */
+}
+    
+/* Effects */
+button:hover {
+    background-color: rgb(35, 239, 35);
+    color: black;
+    cursor: pointer;
+}
+button a:hover{
+    color: rgb(16, 84, 243);
+}
+.menu ul li a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.main h1:hover{
+    color: springgreen;
+}
