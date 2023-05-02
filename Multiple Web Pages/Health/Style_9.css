@@ -1,0 +1,253 @@
+*{
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: mintcream;
+    border-radius: 10%;
+    image-resolution: 100%;
+    width: 100vw;
+    height: 100vh;
+    
+    /* background-size: cover; */
+}
+nav{
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    height: 10%;
+}
+.b1{
+    width: 50%;
+    margin-left: 15%
+}
+nav ul{
+    display: flex;
+    width: 50%;
+    font-weight: 700;
+    margin: 10px 0;
+    list-style: none;
+    gap: 8%;
+}
+a{
+    list-style: none;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    gap: 8%;
+    
+}
+nav a:hover{
+    color: rgba(184, 139, 3, 0.944);
+    size: 20px;  
+}
+/* Nav Bar Ended */
+
+/* Main Body */
+.bc{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-left: 8%;
+    background-image: url(stethoscope.png);
+    height: 90%;
+    /* border: 2px solid red; */
+}
+.bi{
+    align-content: center;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+.mou{
+    margin-top: -15px;
+    margin-left: 95%;
+}
+button{
+    color: white;
+    background-color: rgb(34, 215, 94);
+    font-weight: bolder;
+    font-size: large;
+    cursor: pointer;
+    padding: 12px 35px;
+    border-radius: 20px;
+    border:  none;
+}
+h1{
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.bi p{
+    padding: 15px 0px;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bi button{
+    margin-right: 40%;
+}
+
+/* right Part */
+.dc{
+    margin-left: 0px;
+    background-image: url(greenBox.png);
+    size-adjust: 60%;
+    width: 45%;
+    overflow: hidden;
+    /* border: dashed  2px  greenyellow; */
+}
+.dc img{
+    
+    height: 700px;
+    /* width: 100%; */
+    
+}
+
+
+
+
+
+
+/* About Us Section */
+.main{
+    margin: auto;
+    display: block;
+    margin: 12% 20% 5%  20%;
+    row-gap: 20px;
+}
+.main h1{
+    color: rgb(11, 193, 2);
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.main p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    text-align: center;
+    align-content: center;
+}
+.box h1{
+    border: solid 2px black;
+    border-color: aliceblue;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    text-align: center;
+    margin-top: 15%;
+
+}
+.ml{
+    size: 50%;
+    font-size: medium;
+}
+.box {
+    display: block;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 8px 10px #888888;
+    margin: auto;
+    height: 130px;
+    width: 220px;
+    border-radius: 10px;
+    border-style: solid;
+    box-shadow: chocolate;
+    color: rgb(11, 193, 2);
+}
+.bx{
+    display: flex;
+    margin: 0px 20% 0 20%;
+    }
+
+
+
+
+
+/* Contact Section */
+input[type=text],select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid mintcream;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 8px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: text;
+}
+input[type=email],select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid mintcream;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 8px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: text;
+    border-radius: 8px;
+}
+.mes{
+    width: 100%;
+    /* height: 20px; */
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid mintcream;
+    border-color: #fae739;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 8px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: text;
+}
+input[type=submit]{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.fo{
+    box-sizing: border-box;
+    border-color: 2px solid  aqua  ;
+    margin: auto;
+    margin-top: 10%;
+    width: 25%;
+    height: 55%;
+    padding: 20px;
+
+    display: block;
+    box-shadow: 2px 2px 10px 1px #888888;
+    border-radius: 8px;
+    box-shadow: rgb(250, 130, 45);
+}
+.fo h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: serif;
+    /* font-weight: bolder; */
+}
+.one{
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button:hover{
+    color: black;
+    background-color: #fae739;
+    
+}
+/* Dark Mode */
+.dark-mode {
+    background-color: rgb(29, 26, 26);
+    color: white;
+  }
