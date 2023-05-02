@@ -1,192 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project : 8</title>
-    <!-- External Css Link -->
-    <link rel="stylesheet" href="Style_8.css">
-    <!-- Font Awesome Link -->
-    <script src="https://kit.fontawesome.com/ff839deea0.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <!-- test -->
-    <script>
-        function myFunction() {
-           var element = document.body;
-           element.classList.toggle("dark-mode");
-        }
-        </script>
-    <!-- Project Header -->
-    <nav class="head">
-        <div class="p1">
-            <div class="logo">
-                <!-- dark -->
-                <button class="mg"><img src="beatsLogo.png" alt="logo" onclick="myFunction()" ></button></div>
-            
-            <div class="img2"><img src="mainImage.png" alt="headphone">
-        </div>
-    </div>
-        <div class="p2" >
-        <ul class="lis">
-            <li>Home</li>
-            <li>Specs</li>
-            <li>Case</li>
-            <li>Products</li>
-           <li><button class="shop">Shop</button></li> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beats Landing Page</title>
+
+    <!-- adding the css file -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- adding the poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- creating the navigation menu -->
+    <nav>
+      <img src="./Photos/beatsLogo.png" alt="logo" />
+
+      <div class="nav-right-section">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Specs</a></li>
+          <li><a href="#">Case</a></li>
+          <li><a href="#">Products</a></li>
         </ul>
-        <div class="img">
-            <div class="mid">
-                <img src="onEar.png" alt="onEar">
-            </div>
-            <div class="t1">
-                <h1>Beats 3</h1>
-                <h3>OVERVIEW</h3>
-                <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Consequatur dignissimos maxime harum inventore,<br> voluptas quis voluptates necessitatibus.</p>
-                <button class="u"><i class="fa-solid fa-bag-shopping"></i> Add To Bag  N399K</i></button>
-            </div>
-        </div>
-        
+        <button>Shop</button>
+      </div>
     </nav>
-    <!-- Contents -->
-    <!-- mid Sec -->
-    <div class="il">
-        
-        <li><img src="appleLogo.png" alt=""></li>
-        <li><img src="spotifyLogo.png" alt=""></li>
-        <li><img src="amazonLogo.png" alt=""></li>
-        <li><img src="youtubeLogo.png" alt=""></li>
-    </div>
-    <!-- Second Part -->
-    <div class="n1">
-            <img src="specsLogo.png" alt="">
-        </div>
-    <div class="c1">
-        <div class="list">
-        <div class="bt">
-            <h3><img src="battery.png" alt=""><br> Connection<h5>Blutooth V5.2</h5></h3>
-            </div>
-        <div class="bl">
-            <h3><img src="battery.png" alt=""><br> Battery<h5>Duration 40H</h5></h3>
-            <h3><img src="charger.png" alt=""><br> Load<h5>Fast Charging</h5></h3>
-        </div>
-        <div class="mi">
-            <h3><i class="fa-solid fa-microphone"></i><br>  Microphone <h5>Supports Apple siri assistance </h5></h3>
-        </div>
-    </div>
-        <div class="hd">
-            <img src="specsImage.png" alt="">
-        </div>
-    </div>
 
-    <!-- Third part -->
-    <div class="th">
-        <img src="caseLogo.png" alt=""> 
-    </div>
-     <div class="tp">
-         <img src="caseImage.png" alt="">
-        <div class="tt">
-            <p>Lorem, ipsum dolor sit <br> amet consectetur <br> adipisicing elit. <br>
-                <button><i class="fa-solid fa-circle-info"></i>More Info</button> 
+    <!-- creating the main landing page -->
+    <main>
+      <img class="mainImg" src="./Photos/mainImage.png" alt="main image" />
+      <div class="main">
+        <img class="onEarImg" src="./Photos/onEar.png" alt="on ear logo" />
+        <h1>Beats 3</h1>
+        <h4>Overview</h4>
+        <p>
+          Enjoy award-winning Beats sound with wireless listening freedom and a
+          sleek, streamlined design with comfortable padded earphones,
+          delivering first-rate playback.
+        </p>
+        <div class="shopping-bag-section">
+          <img src="./Icons/shoppingBag.png" alt="shopping bag" />
+          <p>Add to Bag</p>
+          <span>N399K</span>
+        </div>
+      </div>
+    </main>
+
+    <!-- section for adding social media icons -->
+    <section class="social-media-section">
+      <img src="./Photos/appleLogo.png" alt="apple logo" />
+      <img src="./Photos/spotifyLogo.png" alt="spotify logo" />
+      <img src="./Photos/amazonLogo.png" alt="amazon logo" />
+      <img src="./Photos/youtubeLogo.png" alt="youtube logo" />
+    </section>
+
+    <!-- creating a new specification section -->
+    <section class="specification">
+      <!-- adding the specs logo -->
+      <img
+        class="specification-logo"
+        src="./Icons/specsLogo.png"
+        alt="specs logo"
+      />
+
+      <div class="specification-list">
+        <!-- creating a division for holding all the specifications -->
+        <div class="specification-list-items">
+          <!-- creating a division for each specifications -->
+          <div>
+            <img src="./Icons/bluetooth.png" alt="bluetooth" />
+            <p>Connection</p>
+            <p>Bluetooth v5.2</p>
+          </div>
+
+          <div>
+            <img src="./Icons/battery.png" alt="battery" />
+            <p>Battery</p>
+            <p>Duration 40h</p>
+          </div>
+
+          <div>
+            <img src="./Icons/charger.png" alt="charger" />
+            <p>Load</p>
+            <p>Fast Charge 4.2-AAC</p>
+          </div>
+
+          <div>
+            <img src="./Icons/mic.png" alt="mic" />
+            <p>Microphone</p>
+            <p>Supports Apple Siri and Google</p>
+          </div>
+        </div>
+
+        <!-- adding an image with respect to the specification -->
+        <img
+          src="./Photos/specsImage.png"
+          alt="specification headphone image"
+        />
+      </div>
+    </section>
+
+    <!-- creating a case section -->
+    <section class="case">
+      <!-- adding the case logo here -->
+      <img class="case-logo" src="./Icons/caseLogo.png" alt="case logo" />
+
+      <!-- creating a new division to wrap all case items -->
+      <div class="case-item">
+        <img
+          class="case-item-img"
+          src="./Photos/caseImage.png"
+          alt="case image"
+        />
+
+        <div>
+          <p>
+            With a comfortable and adaptable case so that you can store it
+            whenever you want, and keep your durability forever.
+          </p>
+          <p>
+            <img src="./Icons/group.png" alt="group" />
+            More Info
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- section to allow user to buy a product -->
+    <section class="buy-product">
+      <div>
+        <h3>Immense yourself in your music</h3>
+        <p>Buy Now, up to 40% off.</p>
+        <div>
+          <img src="./Icons/shoppingBag.png" alt="shopping bag" />
+          <p>Buy Now</p>
+        </div>
+      </div>
+
+      <img src="./Photos/buyNowSectionImage.png" alt="buy now" />
+    </section>
+
+    <!-- creating a product section to display the items -->
+    <section class="product">
+      <!-- adding the choose style logo -->
+      <img class="product-logo" src="./Icons/productLogo.png" alt="logo" />
+
+      <!-- creating a new division for adding all the products to showcase to user -->
+      <div class="product-items">
+        <!-- creating card for product -->
+        <div class="product-card">
+          <img class="product-img" src="./Photos/black.png" alt="black" />
+          <div class="product-info">
+            <p>
+              Black <br />
+              <span>N299K</span>
             </p>
-        </div>
-     </div>
-     <!-- Div four -->
-    <div class="fl">
-        <!-- left -->
-        <div class="ft">
-            <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing .</p>
-            <button><i class="fa-solid fa-bag-shopping"></i> Buy Now</button>
-        </div>
-        <!-- Rightt -->
-        <div class="fd">
-            <img src="buyNowSectionImage.png" alt="">
-        </div>
-    </div>
-     <!-- HeadPhones Styles  -->
-    <div class="hp">
-        <h1>Choose <br> Your Style</h1>
-    </div>
-    <div class="hs">
-        <div>
-            <img src="nightBlack.png" alt="">
-            <div>
-                <h3>Black <br>$299</h3>
-                <img src="shoppingBag.png" alt="">
-            </div>
-        </div>
-        <div>
-            <img src="redBlack.png" alt="">
-            <div>
-                <h3>Black <br>$299</h3>
-                <img src="shoppingBag.png" alt="">
-            </div>
-        </div>
-        <div>
-            <img src="twilightGray.png" alt="">
-            <div>
-                <h3>Black <br>$299</h3><img src="b" alt="">
-                <img src="shoppingBag.png" alt="">
-            </div>
-        </div>
-        <div>
-            <img src="black.png" alt="">
-            <div>
-                <h3>Black <br>$299</h3>
-                <img src="shoppingBag.png" alt="">
-            </div>
-        </div>
-        <div>
-            <img src="blue.png" alt="">
-            <div>
-                <h3>Black <br>$299</h3>
-                <img src="shoppingBag.png" alt="">
-            </div>
-        </div>
-     </div>
-     <!-- Footer  END-->
-     <div class="el">
-        <div class="fi">
-        <img src="beatsLogo.png" alt="">
-        </div>
-     <div class="fp">
-        <h2>Products</h2>
-        <ul>
-            <li>Headphones</li>
-            <li>Earphones</li>
-            <li>Earbuds</li>
-            <li>Accesories</li>
-        </ul>
-     </div>
-     <div>
-        <h2>Support</h2>
-        <ul>
-            <li>Product help</li>
-            <li>Registers</li>
-            <li>Updates</li>
-            <li>Provides</li>
-        </ul>
-     </div>
-     <div class="fe">
-        <form action="">
-        <div class="news">
-            <input type="email" name="email" placeholder="E-mail">
 
-            <button type="submit" placeholder="Subscribe" value="Subscribe" ><img src="rightArrow.png" alt=""></button>
+            <div>
+              <img src="./Icons/shoppingBag.png" alt="shopping bag" />
+            </div>
+          </div>
         </div>
-        
-    </form>
-        <br>
-        <div class="link">
-            <img src="facebook.png" alt="">
-            <img src="linkedin.png" alt="">
-            <img src="instagram.png" alt="">
-        </div> 
-     </div>
-     <div class="up">
-     <img src="upArrow.png" alt="">
-    </div>
-    </div>  
-</body>
+
+        <!-- creating card for product -->
+        <div class="product-card">
+          <img
+            class="product-img"
+            src="./Photos/redBlack.png"
+            alt="red black"
+          />
+          <div class="product-info">
+            <p>
+              Red Black <br />
+              <span>N299K</span>
+            </p>
+
+            <div>
+              <img src="./Icons/shoppingBag.png" alt="shopping bag" />
+            </div>
+          </div>
+        </div>
+
+        <!-- creating card for product -->
+        <div class="product-card">
+          <img
+            class="product-img"
+            src="./Photos/nightBlack.png"
+            alt="Night Black"
+          />
+          <div class="product-info">
+            <p>
+              Night Black <br />
+              <span>N299K</span>
+            </p>
+
+            <div>
+              <img src="./Icons/shoppingBag.png" alt="shopping bag" />
+            </div>
+          </div>
+        </div>
+
+        <!-- creating card for product -->
+        <div class="product-card">
+          <img class="product-img" src="./Photos/blue.png" alt="blue" />
+          <div class="product-info">
+            <p>
+              Blue <br />
+              <span>N299K</span>
+            </p>
+
+            <div>
+              <img src="./Icons/shoppingBag.png" alt="shopping bag" />
+            </div>
+          </div>
+        </div>
+
+        <!-- creating card for product -->
+        <div class="product-card">
+          <img
+            class="product-img"
+            src="./Photos/twilightGray.png"
+            alt="twilight"
+          />
+          <div class="product-info">
+            <p>
+              Black <br />
+              <span>N299K</span>
+            </p>
+
+            <div>
+              <img src="./Icons/shoppingBag.png" alt="shopping bag" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- designing the footer area of the website -->
+    <footer>
+      <img class="footer-logo" src="./Photos/beatsLogo.png" alt="logo" />
+
+      <!-- creating the product navigation menu -->
+      <ul>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Headphones</a></li>
+        <li><a href="#">Earphones</a></li>
+        <li><a href="#">Earbuds</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+
+      <!-- creating the support navigation menu -->
+      <ul>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Product Help</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Updates</a></li>
+        <li><a href="#">Provides</a></li>
+      </ul>
+
+      <!-- adding subscribe and social media icon buttons -->
+      <div class="footer-subscription">
+        <!-- adding the division for subscribe -->
+        <div>
+          <input type="email" placeholder="Email" />
+          <div class="subscribe-button">
+            <img src="./Icons/rightArrow.png" alt="rightArrow" />
+            <p>Subscribe</p>
+          </div>
+        </div>
+
+        <!-- social media icons -->
+        <div>
+          <img src="./Icons/facebook.png" alt="facebook" />
+          <img src="./Icons/twitter.png" alt="twitter" />
+          <img src="./Icons/instagram.png" alt="instagram" />
+          <img src="./Icons/linkedin.png" alt="linkedin" />
+        </div>
+      </div>
+
+      <!-- adding top arrow for icon for moving the page to top -->
+      <img class="arrow-up" src="./Icons/upArrow.png" alt="upArrow" />
+    </footer>
+  </body>
 </html>
